@@ -8,7 +8,12 @@ function LandingPage() {
             <div className='textstructure mt-52 px-20'>
                 {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
                     <div className="masker">
-                        <h1 className="uppercase text-[7.7vw] leading-[6vw] tracking-tighter font-medium font-['Founders Grotesk']">{item}</h1>
+                        <div className="w-fit flex items-center">
+                            {index === 1 && (<div className='w-[7.7vw] h-[5.3vw] relative top-2 bg-blue-500 rounded-md'>
+
+                            </div>)}
+                            <h1 className="uppercase text-[7.5vw] leading-[6.4vw] tracking-[-0.5vw] font-medium font-['Founders Grotesk']">{item}</h1>
+                        </div>
                     </div>
                 ))}
 

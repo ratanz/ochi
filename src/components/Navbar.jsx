@@ -18,7 +18,19 @@ const Navbar = () => {
 
       <div className="links flex gap-10">
         {['Services','Our Work', 'About Us', 'Insights' ,'Contact'].map((item, index) => (
-          <a key={index} className={`text-lg capitalize font-light ${index === 4 && 'ml-32'}`}>{item}</a>
+          <a 
+            key={index} 
+            className={`text-lg capitalize font-light relative 
+            after:absolute after:h-[0.7px] after:bg-white/70 after:transition-all after:duration-300
+            ${index % 2 === 0 
+              ? 'after:left-0 after:w-0 hover:after:w-full' 
+              : 'after:right-0 after:w-0 hover:after:w-full'
+            }
+            after:bottom-0
+            ${index === 4 && 'ml-32'}`}
+          >
+            {item}
+          </a>
         ))}
       </div>
 
