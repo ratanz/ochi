@@ -2,6 +2,7 @@ import './App.css'
 import LandingPage from './components/LandingPage'
 import Marquee from './components/Marquee'
 import Navbar from './components/Navbar'
+import About from './components/About'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
         <LandingPage/>
         <Marquee/>
+        <About/>
       </div>
     </>
   )
