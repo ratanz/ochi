@@ -38,20 +38,25 @@ const About = () => {
 
       <div className="info flex gap-5 mt-4 p-20 border-t w-full ">
         
-        <div className='w-1/2'>
+        <div className='btn w-1/2'>
           <h1 className='text-7xl'>Our approach:</h1>
-          <button className='group flex items-center gap-4 px-8 py-4 mt-6 w-46 bg-[#1c1c1c] rounded-full text-white'>
-            <span className='uppercase text-sm font-light mr-5'>Read More</span>
-            <div className='relative flex items-center justify-center w-2 h-2'>
+          
+          <a 
+          href="https://twitter.com/ratanz_codes" 
+          target="_blank"
+          className='group flex items-center gap-4 px-8 py-4 mt-6 w-48 bg-[#1c1c1c] rounded-full text-white'>
+            <span className='uppercase text-sm font-semibold mr-5'>Read More</span>
+        
+           <div className='relative flex items-center justify-center w-2 h-2'>
               <div className='w-2 h-2 bg-white rounded-full absolute  group-hover:w-10 group-hover:h-10 transition-all duration-300'></div>
               <MdArrowOutward className='absolute  border-none opacity-0 group-hover:opacity-100 transition-all duration-300 text-black text-2xl' />  
             </div>
-          </button>
+          </a>
         </div>
 
-        <div className="w-1/2 h-[60vh]  ">
+        <div className="w-1/2 h-[60vh]">
             <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg" alt=""
-                className='rounded-2xl'
+                className='rounded-xl  '
             />
         </div>
 
