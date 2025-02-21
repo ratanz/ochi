@@ -13,7 +13,7 @@ const About = () => {
 
       <p className='border-t'></p>
 
-      <div className="text-two px-20 h-[50vh] py-6 flex justify-between">
+      <div className="text-two px-20 py-6 flex justify-between">
         <h2 className=''>What you can expect :</h2>
 
         <div className='flex justify-around w-[45vw]'>
@@ -54,7 +54,7 @@ const About = () => {
           </a>
         </div>
 
-        <div className="w-1/2 h-[60vh]">
+        <div className="w-1/2">
             <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg" alt=""
                 className='rounded-xl  '
             />
