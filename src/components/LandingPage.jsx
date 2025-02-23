@@ -12,7 +12,7 @@ function LandingPage() {
                             {index === 1 && (<div className='mr-[1vw] w-[7.7vw] h-[5.4vw] relative md:top-[0.5vw] top-[0.5vw] bg-blue-500 rounded-md'>
 
                             </div>)}
-                            <h1 className="uppercase text-[7.5vw] md:leading-[6.2vw] leading-[7.2vw] tracking-[-0.4vw] font-medium font-['Founders Grotesk']">{item}</h1>
+                            <h1 className="uppercase text-[7.5vw] md:leading-[6.2vw] leading-[7.2vw] tracking-[-0.4vw] font-medium font-['Neue Montreal']">{item}</h1>
                         </div>
                     </div>
                 ))}

@@ -4,6 +4,7 @@ import Marquee from './components/Marquee'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Eyes from './components/Eyes'
+import Featured from './components/Featured'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Marquee/>
         <About/>
         <Eyes/>
+        <Featured/>
       </div>
     </>
   )
