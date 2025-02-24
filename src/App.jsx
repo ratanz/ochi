@@ -5,6 +5,8 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Eyes from './components/Eyes'
 import Featured from './components/Featured'
+import Cards from './components/Cards'
+import Client from './components/Client'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
         <About/>
         <Eyes/>
         <Featured/>
+        <Client/>
+        <Cards/>
       </div>
     </>
   )
