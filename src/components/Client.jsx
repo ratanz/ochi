@@ -50,7 +50,7 @@ export default function Client() {
             <h1 className="text-5xl font-normal mb-4 text-zinc-900">Clients' reviews</h1>
 
 
-            <div className="img flex absolute right-0 items-center justify-end gap-4 mb-1  ">
+            <div className="img flex absolute right-0 items-center justify-end gap-4 mb-1 px-4  ">
                 <p className="w-[37vw] text-end tracking-tight leading-normal ">They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5</p>
                 <img className="h-40 w-40 rounded-xl " src="https://ochi.design/wp-content/uploads/2023/02/William-Barnes-1-300x300.png" alt="" />
 
