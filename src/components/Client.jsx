@@ -46,7 +46,7 @@ export default function Client() {
     const [expandedReview, setExpandedReview] = useState()
 
     return (
-        <div className="w-full relative bg-zinc-100 text-zinc-900 mx-auto px-4 py-8">
+        <div className="w-full relative z-10 bg-zinc-100 text-zinc-900 mx-auto px-4 py-8">
             <h1 className="text-5xl font-normal mb-4 text-zinc-900">Clients' reviews</h1>
 
 

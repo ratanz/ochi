@@ -2,11 +2,11 @@ import React from 'react'
 
 const Project = () => {
   return (
-    <div className=' h-screen w-full bg-[#CDEA68]'>
+    <div className=' h-screen absolute z-[1000] w-full bg-[#CDEA68]'>
         <div className="wrapper">
             <div className="">
                 <h1>
-                    Ready to start a Project ?
+                    
                 </h1>
             </div>
         </div>
