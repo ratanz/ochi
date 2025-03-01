@@ -8,6 +8,7 @@ import Featured from './components/Featured'
 import Cards from './components/Cards'
 import Client from './components/Client'
 import Project from './components/Project'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Client/>
         <Cards/>
         <Project/>
+        <Footer/>
       </div>
     </>
   )
