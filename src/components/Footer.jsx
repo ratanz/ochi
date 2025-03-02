@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full h-screen bg-zinc-900 p-20'>
+    <div className='flex items-start w-full h-screen bg-zinc-900 p-20'>
 
       <div className="w-1/2 h-full  flex flex-col justify-between items-start  font-['Neue_Montreal'] ">
 
         <div className="heading">
-          <h1 className='text-[8vw] font-semibold uppercase leading-none'>Eye-</h1>
-          <h1 className='text-[8vw] font-semibold uppercase leading-none'>Opening</h1>
+          <h1 className='text-[6vw] font-medium uppercase leading-none'>Eye-</h1>
+          <h1 className='text-[6vw] font-medium uppercase leading-none'>Opening</h1>
         </div>
 
         <div className="logo">
@@ -23,7 +23,21 @@ const Footer = () => {
 
       </div>
 
-      <div className="w-1/2 "></div>
+      <div className="w-1/2 flex flex-col justify-between items-start font-['Neue_Montreal'] ">
+        <h1 className='text-[6vw] font-medium uppercase leading-none'>
+          presentations
+        </h1>
+
+        <div className="links flex flex-col mt-20 gap-4">
+
+          <h3>S: </h3>
+
+          <a href="#" className='text-xs uppercase leading-none'>Instagram</a>
+          <a href="#" className='text-xs  uppercase leading-none'>Behance</a>
+          <a href="#" className='text-xs  uppercase leading-none'>Facebook </a>
+          <a href="#" className='text-xs  uppercase leading-none'>Linkedln</a>
+        </div>
+      </div>
     </div>
   )
 }
