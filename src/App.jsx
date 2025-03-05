@@ -1,4 +1,6 @@
 import './App.css'
+import { ReactLenis, useLenis } from 'lenis/react'
+
 import LandingPage from './components/LandingPage'
 import Marquee from './components/Marquee'
 import Navbar from './components/Navbar'
@@ -12,8 +14,13 @@ import Footer from './components/Footer'
 
 function App() {
 
+
+  const lenis = useLenis(({ scroll }) => {})
+
+
   return (
     <>
+    <ReactLenis root >
       <div className='w-full min-h-screen  text-white bg-zinc-900'>
         <Navbar/>
         <LandingPage/>
@@ -26,6 +33,7 @@ function App() {
         <Project/>
         <Footer/>
       </div>
+    </ReactLenis>
     </>
   )
 }

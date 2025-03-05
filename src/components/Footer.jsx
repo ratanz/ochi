@@ -62,13 +62,13 @@ const Footer = () => {
 
             <div className="more px-4 flex items-start flex-col">
 
-              <h3 className='mb-8' >M :</h3>
+              <h3 className='mb-3 ' >M :</h3>
               <div className="flex flex-col ">
                 {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
                   <a
                     key={index}
                     href="" 
-                    className='leading-normal relative w-fit after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300'
+                    className='leading-normal mt-2 relative w-fit after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300'
                   >
                     {item}
                   </a>
