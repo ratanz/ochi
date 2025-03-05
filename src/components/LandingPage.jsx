@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import { motion } from "motion/react"
 
 function LandingPage() {
     return (
@@ -7,13 +8,22 @@ function LandingPage() {
 
             <div className='textstructure mt-52 px-20'>
                 {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
-                    <div className="masker">
+                   
+                   <div className="masker"> 
                         <div className="w-fit flex items-center">
-                            {index === 1 && (<div className='mr-[1vw] w-[7.7vw] h-[5.4vw] relative md:top-[0.5vw] top-[0.5vw] bg-blue-500 rounded-md'>
-
-                            </div>)}
+                             
+                               {index === 1 && 
+                            (<motion.div 
+                            initial={{width: 0}}
+                            animate={{width: '7.7vw'}}
+                            transition={{ease : [0.76, 0, 0.24, 1], duration : 1}}
+                            className='mr-[0.2vw] w-[7.7vw] h-[5.4vw] relative md:top-[0.5vw] top-[0.5vw] rounded-md'> 
+                                <img src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" className='w-full h-full rounded-xl object-cover' alt="" />
+                            </motion.div>)}
+                            
                             <h1 className="uppercase text-[7.5vw] md:leading-[6.2vw] leading-[7.2vw] tracking-[-0.4vw] font-medium font-['Neue Montreal']">{item}</h1>
                         </div>
+
                     </div>
                 ))}
 
