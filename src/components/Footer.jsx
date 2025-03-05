@@ -34,55 +34,56 @@ const Footer = () => {
           {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
             <a
               key={index}
-              href="" className='leading-none'>{item}</a>
+              href="" 
+              className='leading-none relative w-fit after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300'
+            >
+              {item}
+            </a>
           ))}
 
-          <div className="mt-6 flex bg-blue-500 w-full items-center justify-between ">
+          <div className="mt-6 flex  bg-blue-0 w-full items-center justify-between ">
 
             <div className="flex flex-col">
               <h3 className=''>L :</h3>
 
-              <div className="para w-40 ">
-                <p className='   underline'>202-1965 W 4th Ave
+              <div className="w-40 gap-4 pt-4 flex flex-col">
+                <p className=' mt- underline'>202-1965 W 4th Ave
                   Vancouver, Canada
                 </p>
 
-                <p className=' underline'>
+
+                <p className='mt- underline '>
                   30 Chukarina St
                   Lviv, Ukraine
                 </p>
               </div>
 
-
             </div>
 
+            <div className="more px-4 flex items-start flex-col">
 
+              <h3 className='mb-8' >M :</h3>
+              <div className="flex flex-col ">
+                {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
+                  <a
+                    key={index}
+                    href="" 
+                    className='leading-normal relative w-fit after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-white hover:after:w-full after:transition-all after:duration-300'
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
 
-            <div className="more flex flex-col px-4  ">
-
-              <h3 className=''>M :</h3>
-
-              {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
-                <a
-                  key={index}
-                  href="" className=' leading-normal underline '>{item}</a>
-              ))}
             </div>
 
           </div>
 
-          <div className=" flex  bg-red-500">
 
-            <div className="email">
-              <h3 className='mt-4'>E : </h3>
-              <a href="">hello@ochi.design</a>
-            </div>
-
-
-
+          <div className="email">
+            <h3 className='mt-4'>E : </h3>
+            <a href="">hello@ochi.design</a>
           </div>
-
-
 
         </div>
       </div>
