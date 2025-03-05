@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex items-start w-full h-screen bg-zinc-900 p-20'>
+    <div className='relative flex items-start w-full h-screen bg-zinc-900 p-20'>
 
       <div className="w-1/2 h-full  flex flex-col justify-between items-start  font-['Neue_Montreal'] ">
 
@@ -28,14 +28,62 @@ const Footer = () => {
           presentations
         </h1>
 
-        <div className="links flex flex-col mt-20 gap-4">
+        <div className="links w-full flex flex-col mt-20 gap-4">
 
           <h3>S: </h3>
+          {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
+            <a
+              key={index}
+              href="" className='leading-none'>{item}</a>
+          ))}
 
-          <a href="#" className='text-xs uppercase leading-none'>Instagram</a>
-          <a href="#" className='text-xs  uppercase leading-none'>Behance</a>
-          <a href="#" className='text-xs  uppercase leading-none'>Facebook </a>
-          <a href="#" className='text-xs  uppercase leading-none'>Linkedln</a>
+          <div className="mt-6 flex bg-blue-500 w-full items-center justify-between ">
+
+            <div className="flex flex-col">
+              <h3 className=''>L :</h3>
+
+              <div className="para w-40 ">
+                <p className='   underline'>202-1965 W 4th Ave
+                  Vancouver, Canada
+                </p>
+
+                <p className=' underline'>
+                  30 Chukarina St
+                  Lviv, Ukraine
+                </p>
+              </div>
+
+
+            </div>
+
+
+
+            <div className="more flex flex-col px-4  ">
+
+              <h3 className=''>M :</h3>
+
+              {['Facebook', 'Behance', 'Instagram', 'Linkedin'].map((item, index) => (
+                <a
+                  key={index}
+                  href="" className=' leading-normal underline '>{item}</a>
+              ))}
+            </div>
+
+          </div>
+
+          <div className=" flex  bg-red-500">
+
+            <div className="email">
+              <h3 className='mt-4'>E : </h3>
+              <a href="">hello@ochi.design</a>
+            </div>
+
+
+
+          </div>
+
+
+
         </div>
       </div>
     </div>
