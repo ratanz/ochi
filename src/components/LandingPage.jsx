@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 function LandingPage() {
     return (
-        <div className='w-ful h-screen bg-zinc-900 pt-1 '>
+        <div className='w-full h-screen bg-zinc-900 pt-1 '>
 
             <div className='textstructure mt-52 px-20'>
                 {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
@@ -16,7 +16,7 @@ function LandingPage() {
                             (<motion.div 
                             initial={{width: 0}}
                             animate={{width: '7.7vw'}}
-                            transition={{ease : [0.76, 0, 0.24, 1], duration : 1}}
+                            transition={{ease : [0.76, 0, 0.24, 1], duration : 1, delay: 1}}
                             className='mr-[0.2vw] w-[7.7vw] h-[5.4vw] relative md:top-[0.5vw] top-[0.5vw] rounded-md'> 
                                 <img src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg" className='w-full h-full rounded-xl object-cover' alt="" />
                             </motion.div>)}
