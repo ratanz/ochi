@@ -2,9 +2,12 @@ import React from 'react'
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { motion } from "motion/react"
 
+
 function LandingPage() {
+
+
     return (
-        <div className='w-full h-screen bg-zinc-900 pt-1 '>
+        <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-900 pt-1 '>
 
             <div className='textstructure mt-52 px-20'>
                 {["We Create", "Eye Opening", "Presentations"].map((item, index) => (

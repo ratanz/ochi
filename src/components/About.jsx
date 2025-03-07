@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className='w-full py-4 bg-[#CDEA68] text-black rounded-tl-3xl rounded-r-3xl'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.1"  className='w-full bg-[#CDEA68] text-black rounded-tl-3xl rounded-r-3xl'>
 
       <div className='text-one p-16'>
         <h1 className='font-["Neue_Montreal"] text-[3.7vw] leading-[3.4vw] tracking-tight'>Ochi is a strategic presentation agency for forward-thinking businesses

@@ -1,5 +1,6 @@
 import './App.css'
-import { ReactLenis, useLenis } from 'lenis/react'
+// import { ReactLenis, useLenis } from 'lenis/react'
+import LocomotiveScroll from 'locomotive-scroll';
 
 import LandingPage from './components/LandingPage'
 import Marquee from './components/Marquee'
@@ -15,12 +16,11 @@ import Footer from './components/Footer'
 function App() {
 
 
-  const lenis = useLenis(({ scroll }) => {})
+  const locomotiveScroll = new LocomotiveScroll();
 
 
   return (
     <>
-    <ReactLenis root >
       <div className='w-full min-h-screen  text-white bg-zinc-900'>
         <Navbar/>
         <LandingPage/>
@@ -33,7 +33,6 @@ function App() {
         <Project/>
         <Footer/>
       </div>
-    </ReactLenis>
     </>
   )
 }
