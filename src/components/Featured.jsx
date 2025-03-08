@@ -54,7 +54,7 @@ const Featured = () => {
                                         initial={{ opacity: 0, y: 20 , x: 20 }}
                                         animate={{ 
                                             opacity: hoveredIndex === index ? 1 : 0,
-                                            y: hoveredIndex === index ? 0 : 20,
+                                            y: hoveredIndex === index ? 0 : 40,
                                             x: hoveredIndex === index ? 0 : 40,
                                             scale: 1.5,
                                             
