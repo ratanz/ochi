@@ -34,7 +34,7 @@ const Eyes = () => {
                 damping: 25,
                 mass: 0.8,
               }}
-            >
+            > 
               <motion.div
                 className="absolute w-10 h-10 rounded-full bg-zinc-100"
                 animate={{
