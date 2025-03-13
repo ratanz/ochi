@@ -32,10 +32,10 @@ const Navbar = () => {
     <>
       <motion.div
         initial={{ y: 0, opacity: 0 }}
-        animate={{ y: visible ? 0 : "0%", opacity: visible ? 1 : 0 }}
+        animate={{ y: visible ? 0 : "-100%", opacity: visible ? 1 : 0, backgroundColor: visible ? 'rgba(0,0,0,0.0)' : 'rgba(2,2,2,2.9)' }}
         exit={{ y: "-100%", opacity: 0 }}
-        transition={{ duration: 0.4 }}
-        className="fixed w-full px-20 py-8 font-['Neue Montreal'] flex justify-between z-50 "
+        transition={{ duration: 0.7, ease:'easeInOut' }}
+        className="fixed w-full h-14 px-20 py-4 font-['Neue Montreal'] flex  justify-between z-50  "
       >
         <div className="logo">
           <svg width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
