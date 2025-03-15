@@ -33,7 +33,7 @@ const Navbar = () => {
         animate={{ y: visible ? 0 : "-100%", opacity: visible ? 1 : 0 }}
         exit={{ y: "-100%", opacity: 0 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className="fixed w-full h-16 px-16 py-0 font-['Neue_Montreal'] flex items-center text-zinc-800 backdrop-filter backdrop-blur-3xl bg-white/5 justify-between z-50 shadow-sm"
+        className="fixed w-full h-16 px-16 py-0 font-['Neue_Montreal'] flex items-center text-zinc-800 backdrop-filter backdrop-blur-3xl bg-[#ffffff28] justify-between z-50 shadow-sm"
       >
         <div className="logo">
           <svg width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
