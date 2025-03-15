@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
-
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -30,12 +28,12 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.div
+    <motion.div
         initial={{ y: 0, opacity: 0 }}
-        animate={{ y: visible ? 0 : "-100%", opacity: visible ? 1 : 0, backgroundColor: visible ? 'rgba(0,0,0,0.0)' : 'rgba(2,2,2,2.9)' }}
+        animate={{ y: visible ? 0 : "-100%", opacity: visible ? 1 : 0 }}
         exit={{ y: "-100%", opacity: 0 }}
-        transition={{ duration: 0.7, ease:'easeInOut' }}
-        className="fixed w-full h-14 px-20 py-4 font-['Neue Montreal'] flex  justify-between z-50  "
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        className="fixed w-full h-16 px-16 py-0 font-['Neue_Montreal'] flex items-center text-zinc-800 backdrop-filter backdrop-blur-3xl bg-white/5 justify-between z-50 shadow-sm"
       >
         <div className="logo">
           <svg width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,24 +49,22 @@ const Navbar = () => {
           {['Services', 'Our Work', 'About Us', 'Insights', 'Contact'].map((item, index) => (
             <a
               key={index}
-              className={`text-lg capitalize font-light relative 
-            after:absolute after:h-[0.7px] after:bg-white/70 after:transition-all after:duration-300
-            ${index % 2 === 0
-                  ? 'after:left-0 after:w-0 hover:after:w-full'
-                  : 'after:right-0 after:w-0 hover:after:w-full'
-                }
-            after:bottom-0
-            ${index === 4 && 'ml-32'}`}
+              className={`text-lg capitalize font-light relative hover:text-white transition-colors
+              after:absolute after:h-[0.7px] after:bg-white/70 after:transition-all after:duration-300
+              ${index % 2 === 0
+                ? 'after:left-0 after:w-0 hover:after:w-full'
+                : 'after:right-0 after:w-0 hover:after:w-full'
+              }
+              after:bottom-0
+              ${index === 4 && 'ml-32'}`}
             >
               {item}
             </a>
           ))}
         </div>
-
       </motion.div>
-
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
